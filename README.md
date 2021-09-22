@@ -9,8 +9,8 @@
         - [Upsert・・・登録/更新](#Upsert)
         - [Delete・・・削除](#Delete)
   - [非同期処理](#非同期処理)
-    - [@futureを使用する方法](#アノテーションを使う ※使用頻度は高くないたコード例のみ)
-    - [Database .batchableを使用する方法](#バッチ(Database.Batchable)を使う)
+    - [futureを使用する方法](#@future)
+    - [Database .batchableを使用する方法](#Database.Batchable)
   - [トリガ](#トリガ)
   - [スケジューラ](#スケジューラ)
   - [ガバナ制限](#ガバナ制限)
@@ -97,7 +97,8 @@ Database.delete(actList, false);
 
 # 非同期処理
 ガバナ制限の回避や、大量のデータをやり取りする場合はバッチ処理を使用する。
-# アノテーションを使う ※使用頻度は高くないたコード例のみ
+# @future
+アノテーションを使う ※使用頻度は高くないたコード例のみ
 ```java
 @future
 public void メソッド名() {
@@ -105,7 +106,8 @@ public void メソッド名() {
 }
 ```
 > Apex 開発者ガイド: [future のメソッド](https://developer.salesforce.com/docs/atlas.ja-jp.apexcode.meta/apexcode/apex_invoking_future_methods.htm)
-# バッチ(Database.Batchable)を使う
+# Database.Batchable
+バッチ(Database.Batchable)を使う
    - Database.QueryLocatorまたはIterable<sObject>を使用できるが、基本的には前者を使用していればよい。より複雑な処理を行う場合のみ後者を選択する。そのため本記事には前者のみの説明とする。
    - Database.Batchable インターフェースには、実装が必要な次の 3 つのメソッドが含まれています。
 ```Java
