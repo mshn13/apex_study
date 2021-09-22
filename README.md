@@ -85,16 +85,14 @@ List<Account> actList = [SELECT id FROM account WHERE name = `取引先A`];
  */
 Database.delete(actList, false);
 ```
-:::note info
+※ よく調べるやつ
 [参照項目の値の更新方法](https://developer.salesforce.com/docs/atlas.ja-jp.232.0.apexcode.meta/apexcode/langCon_apex_dml_nested_object.htm)
 [エラーの取得方法](https://gawatari.com/apexlumpdml/)
-:::
-:::note warn
-注意
+※　注意
 構文的にSQLと同じ箇所が多いが大きく違うのが以下の２点になる
 1. 取得する項目はSELECTするときに必ず記載しなければならない。上記のようにnameだけ記載した場合は作成日などは取得できない。ただしIDだけはデフォルトで取得できる。「＊」は使用できない
 2. ガバナ制限に注意しなければならない。具体的には一回の重い処理する場合などに制限がある。
-:::
+
 # 非同期処理
 ガバナ制限の回避や、大量のデータをやり取りする場合はバッチ処理を使用する。
 1. アノテーションを使う ※使用頻度は高くないたコード例のみ
