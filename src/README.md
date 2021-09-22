@@ -51,7 +51,6 @@ Map<String, Map<Account, CustomAccount__c>> customAccount =
 ## 変数名
 1. 変数：ローワーキャメルケース
 2. 定数：すべて大文字。単語の間はアンダースコア
- - ただしローカル変数のfinalである場合は
 3. あからさまに長い文字ではない限り略さない
    1. count    -> cnt
    2. number   -> num
