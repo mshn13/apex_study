@@ -1,1 +1,1 @@
-# sapleクラス
+# Sampleクラス
