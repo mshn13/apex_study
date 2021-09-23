@@ -1,27 +1,30 @@
 # Apex入門
 ## 目次
-  - [Apex入門](#apex入門)
-    - [SOQL/DML](#soqldml)
-      - [SOQLとは](#soqlとは)
-      - [DMLとは](#dmlとは)
-        - [Insert・・・新規登録](#Insert)
-        - [Update・・・更新](#Update)
-        - [Upsert・・・登録/更新](#Upsert)
-        - [Delete・・・削除](#Delete)
-  - [非同期処理](#非同期処理)
-    - [futureを使用する方法](#future)
-    - [Database .batchableを使用する方法](#DatabaseBatchable)
-  - [トリガ](#トリガ)
-  - [スケジューラ](#スケジューラ)
-  - [ガバナ制限](#ガバナ制限)
+- [SOQL/DML](#soqldml)
+  - [SOQL](#SOQL)
+    - [SOQLとは](#soqlとは)
+    - [Apex内でのSOQL使用例](#Apex内でのSOQL使用例)
+  - [DML](#DML) 
+    - [DMLとは](#dmlとは)
+      - [Insert・・・新規登録](#Insert)
+      - [Update・・・更新](#Update)
+      - [Upsert・・・登録/更新](#Upsert)
+      - [Delete・・・削除](#Delete)
+- [非同期処理](#非同期処理)
+  - [futureを使用する方法](#future)
+  - [Database .batchableを使用する方法](#DatabaseBatchable)
+- [トリガ](#トリガ)
+- [スケジューラ](#スケジューラ)
+- [ガバナ制限](#ガバナ制限)
 
 > 1. TRAILHEAD: [Apex の基本とデータベース](https://trailhead.salesforce.com/ja/content/learn/modules/apex_database)
->> クイックリファレンス: [Apex ガバナ制限](https://developer.salesforce.com/docs/atlas.ja-jp.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_apexgov.htm)
 > 2. TRAILHEAD: [非同期 Apex](https://trailhead.salesforce.com/ja/content/learn/modules/asynchronous_apex)
 # SOQL/DML
-## SOQLとは
+## SOQL
+### SOQLとは
 Salesforce上の各オブジェクト(テーブル)に問い合わせるためのクエリのこと
 基本構文としてはSQLと同じになる。
+### Apex内でのSOQL使用例
 ```Apex
 /* 取得もとによってリストか単体かが自動で判定される */
 -- リスト
@@ -37,9 +40,10 @@ List<Account> actList = [SELECT name FROM account WHERE name = `取引先A`];
 -- 単体
 Account act = [SELECT name FROM account WHERE name = `取引先A`];
 ```
-## DMLとは
+## DML
+### DMLとは
 Salesforce上の各オブジェクト(テーブル)を更新するための処理のこと。
-## insert
+### insert
 新規レコード登録 
 ```Apex
 List<Account> actList = new List<Account>();
@@ -51,7 +55,7 @@ actList.add(act);
  */
 Database.insert(actList, false);
 ```
-## updatee
+### updatee
 レコード更新 
 ```Apex
 List<Account> actList = [SELECT id, name FROM account WHERE name = `取引先A`];
@@ -62,7 +66,7 @@ List<Account> actList = [SELECT id, name FROM account WHERE name = `取引先A`]
  */
 Database.update(actList, false);
 ```
-## upsert
+### upsert
 - レコードの作成/更新
 ```Apex
 List<Account> actList = [SELECT id, name FROM account WHERE name = `取引先A`];
@@ -76,7 +80,7 @@ actList.add(act);
  */
 Database.upsert(actList, Account.Fields.name false);
 ```
-## delete
+### delete
 レコード削除
 ```Apex
 List<Account> actList = [SELECT id FROM account WHERE name = `取引先A`];
@@ -138,5 +142,11 @@ Database.executeBatch(new Batch(), 200);
 ](https://developer.salesforce.com/docs/atlas.ja-jp.230.0.apexcode.meta/apexcode/apex_batch_interface.htm)
 
 # トリガ
+## トリガとは
 # スケジューラ
+## スケジューラとは
 # ガバナ制限
+## ガバナ制限とは
+Salesforceでは一つのリソースを複数の会社が共有しているためメモリやCPU、DBなどを大きく占有する処理の制限のこと。
+>> クイックリファレンス: [Apex ガバナ制限](https://developer.salesforce.com/docs/atlas.ja-jp.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_apexgov.htm)
+	
