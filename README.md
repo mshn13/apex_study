@@ -213,7 +213,7 @@ public class SampleClass {
 | 条件  | colomnA__cの値  | Active  | Deleted  |
 | 結果  | colomnA__cの値  | false  | true  |
 	
-コーディングした場合以下になる
+コーディングした場合以下になる。
 ```Apex
 @isTest
 public class SampleTestClass {
