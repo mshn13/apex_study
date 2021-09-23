@@ -14,12 +14,17 @@
 　　　　- [非同期処理とは](#非同期処理とは)
   - [futureを使用する方法](#future)
   - [Database .batchableを使用する方法](#DatabaseBatchable)
-- [トリガ](#トリガ)
 - [スケジューラ](#スケジューラ)
+　　　　- [スケジューラとは](#スケジューラとは)
+- [トリガ](#トリガ)
+　　　　- [トリガとは](#トリガとは)
 - [ガバナ制限](#ガバナ制限)
-
-> 1. TRAILHEAD: [Apex の基本とデータベース](https://trailhead.salesforce.com/ja/content/learn/modules/apex_database)
-> 2. TRAILHEAD: [非同期 Apex](https://trailhead.salesforce.com/ja/content/learn/modules/asynchronous_apex)
+　　　　- [ガバナ制限とは](#ガバナ制限とは)
+# TRAILHEAD
+> 1. [Apex の基本とデータベース](https://trailhead.salesforce.com/ja/content/learn/modules/apex_database)
+> 2. [非同期 Apex](https://trailhead.salesforce.com/ja/content/learn/modules/asynchronous_apex)
+> 3. [Apex トリガ](https://trailhead.salesforce.com/ja/content/learn/modules/apex_triggers)
+> 4. []()
 # SOQL/DML
 ## SOQL
 ### SOQLとは
@@ -102,7 +107,7 @@ Database.delete(actList, false);
 
 # 非同期処理
 ## 非同期処理とは
-通常Apexのプログラムは一つのプロセス上で実行される。非同期処理では複数のプロセスで処理が実行される。
+通常Apexのプログラムは一つのスレッド上で実行される。非同期処理では複数のスレッドで処理が実行される。
 ガバナ制限の回避や、大量のデータをやり取りする場合はバッチ処理を使用する。
 ### @future
 アノテーションを使う ※使用頻度は高くないたコード例のみ
@@ -143,11 +148,11 @@ Database.executeBatch(new Batch(), 200);
 ```
 > Apex 開発者ガイド: [Apex の一括処理の使用
 ](https://developer.salesforce.com/docs/atlas.ja-jp.230.0.apexcode.meta/apexcode/apex_batch_interface.htm)
-
-# トリガ
-## トリガとは
 # スケジューラ
 ## スケジューラとは
+非同期処理の一つ。Salesforce上で設定した曜日に間隔的に実行されるApexクラス
+# トリガ
+## トリガとは
 # ガバナ制限
 ## ガバナ制限とは
 Salesforceでは一つのリソースを複数の会社が共有しているためメモリやCPU、DBなどを大きく占有する処理の制限のこと。
