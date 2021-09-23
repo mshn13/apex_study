@@ -24,9 +24,9 @@
   - [スケジューラとは](#スケジューラとは)
 - [トリガ](#トリガ)
   - [トリガとは](#トリガとは)
+  - [トリガの使用例](#トリガの使用例)
 - [ガバナ制限](#ガバナ制限)
   - [ガバナ制限とは](#ガバナ制限とは)
- 
 # SOQL/DML
 ## SOQL
 ### SOQLとは
@@ -180,6 +180,7 @@ global class SampleClass implements Schedulable {
 	// 処理
     }
 ```
+> Apex 開発者ガイド: [Trigger クラス](https://developer.salesforce.com/docs/atlas.ja-jp.apexcode.meta/apexcode/apex_class_System_Trigger.htm)
 # ガバナ制限
 ## ガバナ制限とは
 Salesforceでは一つのリソースを複数の会社が共有しているためメモリやCPU、DBなどを大きく占有する処理の制限のこと。
