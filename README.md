@@ -216,7 +216,7 @@ public class SampleClass {
 | 結果  | colomnA__cの値  | false  | true  |
 	
 コーディングした場合以下になる。
-※<font color="red">クラス名とテストメソッド名に@isTestを記載する</font>
+:warning: **クラス名とテストメソッド名に@isTestを記載する**
 ```Apex
 @isTest
 public class SampleTestClass {
