@@ -208,7 +208,7 @@ public class SampleClass {
 このクラスをテストするには以下のパターンが想定される
 
 
-| 項目名 | パターン1 | パターン2 |
-| ------------- | ------------- | ------------- |
-| colomnA__cの値  | Active  | Deleted  |
-| colomnA__cの値  | false  | true  |
+|  | 項目名 | パターン1 | パターン2 |
+| ------------- | ------------- | ------------- | ------------- |
+| 条件  | colomnA__cの値  | Active  | Deleted  |
+| 結果  | colomnA__cの値  | false  | true  |
