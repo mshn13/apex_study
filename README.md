@@ -39,18 +39,18 @@ Salesforce上の各オブジェクト(テーブル)に問い合わせるため�
 基本構文としてはSQLと同じになる。
 ### Apex内でのSOQL使用例
 ```Apex
-/* 取得もとによってリストか単体かが自動で判定される */
--- リスト
+/* 取得もとの変数によってリストか単体かが自動で判定される */
+// リスト
 List<SObject> objList = [SELECT colomn FROM SObject];
--- 単体
+// 単体
 SObject obj = [SELECT colomn FROM SObject];
 ```
 またWHERE句をしようして条件を指定することができる
 ```Apex
 /* nameの値が取引先Aになっている取引先オブジェクトを取得 */
--- リスト
+// リスト
 List<Account> actList = [SELECT name FROM account WHERE name = `取引先A`];
--- 単体
+// 単体
 Account act = [SELECT name FROM account WHERE name = `取引先A`];
 ```
 ## DML
