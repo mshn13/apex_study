@@ -173,7 +173,7 @@ global class SampleClass implements Schedulable {
 - after insert 登録後処理
 - after update 更新後処理
 - after delete 削除後処理
-- after undelete　ごみ箱からの復元後処理
+- after undelete ごみ箱からの復元後処理
 ```Apex
     // Account登録更新前に呼ばれる
     trigger HelloWorldTrigger on Account (before insert, before update) {
