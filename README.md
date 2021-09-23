@@ -5,6 +5,7 @@
 > 1. [Apex の基本とデータベース](https://trailhead.salesforce.com/ja/content/learn/modules/apex_database)
 > 2. [非同期 Apex](https://trailhead.salesforce.com/ja/content/learn/modules/asynchronous_apex)
 > 3. [Apex トリガ](https://trailhead.salesforce.com/ja/content/learn/modules/apex_triggers)
+> 4. [Apex テスト](https://trailhead.salesforce.com/ja/content/learn/modules/apex_testing)
 ## 目次
 - [SOQL/DML](#soqldml)
   - [SOQL](#SOQL)
@@ -28,6 +29,7 @@
   - [トリガの使用例](#トリガの使用例)
 - [ガバナ制限](#ガバナ制限)
   - [ガバナ制限とは](#ガバナ制限とは)
+- [Apexテスト](#Apexテスト)
 # SOQL/DML
 ## SOQL
 ### SOQLとは
@@ -187,3 +189,20 @@ global class SampleClass implements Schedulable {
 Salesforceでは一つのリソースを複数の会社が共有しているためメモリやCPU、DBなどを大きく占有する処理の制限のこと。
 ここは最重要だがSQOLを使用する際に毎回調べれば覚えられる範囲なので、暗記しなくても良い
 > クイックリファレンス: [Apex ガバナ制限](https://developer.salesforce.com/docs/atlas.ja-jp.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_apexgov.htm)
+# Apexテスト
+## Apexテストとは
+Apexテストは単体テストとも呼ばれる。テストコードは基本的に自分がコーディングした箇所が正常に動いているかを確認するもの。
+コーディングした範囲が最低でも７５％以上通るようにするが、基本的には１００％通るようにする。
+## 具体的なテストパターン
+必須ではないカスタム項目「colomnA__c(テキスト)」「colomnB__c(チェックボックス)」をAccountオブジェクトに作成する。
+```Apex
+public class SampleClass {
+	public void execute() {
+		Account act = [SELECT colomnA__c, colomnB__c FROM Account Limit 1];
+		act.colomnB__c = act.colomnA__c == 'Active' ? false : true;
+		Database.insert(act, false);
+	}
+}
+```
+上記のSampleClassではcolomnA__cの値が'Active'の場合はcolomnB__cの値にfalse、それ以外の場合trueが入る処理になっている。
+このクラスをテストするには以下のパターンが想定される
