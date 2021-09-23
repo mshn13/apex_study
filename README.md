@@ -152,7 +152,7 @@ Database.executeBatch(new Batch(), 200);
 ](https://developer.salesforce.com/docs/atlas.ja-jp.230.0.apexcode.meta/apexcode/apex_batch_interface.htm)
 # スケジューラ
 ## スケジューラとは
-非同期処理の一つ。Salesforce上で設定した曜日に間隔的に実行されるApexクラス
+非同期処理の一つ。Salesforce上で設定した曜日に間隔的に実行することができる。
 ## スケジューラの使用例
 以下のクラスを作成するだけでSalesforce上で以下クラスのスケジュール設定を行うことができる
 ```Apex
