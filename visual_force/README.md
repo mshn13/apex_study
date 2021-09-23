@@ -7,7 +7,7 @@
 - [拡張コントローラ](#拡張コントローラ)
 - [カスタムコントローラ](#カスタムコントローラ)
 ## visualforceページとは
-HTMLライクな書き方で作成したSalesforceの画面のこと。Visw部分をVisualfoceやCSSやJavascriptで設計し、Controller部分をApexで設計する。
+HTMLライクな書き方で作成したSalesforceの画面のこと。Visw部分をVisualforceやCSSやJavascriptで設計し、Controller部分をApexで設計する。
 > 外部サイト[salesforce MVC モデル　ビュー　コントローラー とは　いまさら](https://salesforce.oikeru.com/entry/salesforce_mvc)
 ## 標準コントローラ
 ## 拡張コントローラ
