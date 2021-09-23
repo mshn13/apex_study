@@ -16,7 +16,7 @@
   - [ガバナ制限](#ガバナ制限)
 
 > 1. TRAILHEAD: [Apex の基本とデータベース](https://trailhead.salesforce.com/ja/content/learn/modules/apex_database)
-> クイックリファレンス: [Apex ガバナ制限](https://developer.salesforce.com/docs/atlas.ja-jp.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_apexgov.htm)
+>> クイックリファレンス: [Apex ガバナ制限](https://developer.salesforce.com/docs/atlas.ja-jp.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_apexgov.htm)
 > 2. TRAILHEAD: [非同期 Apex](https://trailhead.salesforce.com/ja/content/learn/modules/asynchronous_apex)
 # SOQL/DML
 ## SOQLとは
