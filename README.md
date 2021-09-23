@@ -1,4 +1,10 @@
 # Apex入門
+
+## TRAILHEAD
+本記事は以下のTRAILHEADの内容をまとめたもののため以下を実施が前提となる
+> 1. [Apex の基本とデータベース](https://trailhead.salesforce.com/ja/content/learn/modules/apex_database)
+> 2. [非同期 Apex](https://trailhead.salesforce.com/ja/content/learn/modules/asynchronous_apex)
+> 3. [Apex トリガ](https://trailhead.salesforce.com/ja/content/learn/modules/apex_triggers)
 ## 目次
 - [SOQL/DML](#soqldml)
   - [SOQL](#SOQL)
@@ -21,10 +27,6 @@
 - [ガバナ制限](#ガバナ制限)
   - [ガバナ制限とは](#ガバナ制限とは)
  
-# TRAILHEAD
-> 1. [Apex の基本とデータベース](https://trailhead.salesforce.com/ja/content/learn/modules/apex_database)
-> 2. [非同期 Apex](https://trailhead.salesforce.com/ja/content/learn/modules/asynchronous_apex)
-> 3. [Apex トリガ](https://trailhead.salesforce.com/ja/content/learn/modules/apex_triggers)
 # SOQL/DML
 ## SOQL
 ### SOQLとは
@@ -162,6 +164,17 @@ global class SampleClass implements Schedulable {
 ```
 # トリガ
 ## トリガとは
+## トリガの使用例
+以下のイベントを判定することができる
+- before insert　登録前処理
+- before update　登録前処理
+- before delete　削除前処理
+- after insert　登録後処理
+- after update 更新後処理
+- after delete 削除後処理
+- after undelete　ごみ箱からの復元後処理
+```Apex
+```
 # ガバナ制限
 ## ガバナ制限とは
 Salesforceでは一つのリソースを複数の会社が共有しているためメモリやCPU、DBなどを大きく占有する処理の制限のこと。
