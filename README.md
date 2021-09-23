@@ -206,6 +206,6 @@ public class SampleClass {
 ```
 上記のSampleClassではcolomnA__cの値が'Active'の場合はcolomnB__cの値にfalse、それ以外の場合trueが入る処理になっている。
 このクラスをテストするには以下のパターンが想定される
-|colomnA__cの値|Active|Deleted|
-|colomnA__cの値|false|true|
+| colomnA__cの値 | Active | Deleted |
+| colomnA__cの値 | false | true |
 
