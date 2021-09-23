@@ -185,4 +185,5 @@ global class SampleClass implements Schedulable {
 # ガバナ制限
 ## ガバナ制限とは
 Salesforceでは一つのリソースを複数の会社が共有しているためメモリやCPU、DBなどを大きく占有する処理の制限のこと。
+ここは最重要だがSQOLを使用する際に毎回調べれば覚えられる範囲なので、暗記しなくても良い
 > クイックリファレンス: [Apex ガバナ制限](https://developer.salesforce.com/docs/atlas.ja-jp.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_apexgov.htm)
