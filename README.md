@@ -167,10 +167,10 @@ global class SampleClass implements Schedulable {
 オブジェクトが登録や更新などのアクションを起こした際に呼ばれるもの。アクション前、後などタイミングを選択することができる。
 ## トリガの使用例
 以下の引数をトリガに渡すことによってイベントを取得することができる
-- before insert　登録前処理
-- before update　登録前処理
-- before delete　削除前処理
-- after insert　登録後処理
+- before insert 登録前処理
+- before update 登録前処理
+- before delete 削除前処理
+- after insert 登録後処理
 - after update 更新後処理
 - after delete 削除後処理
 - after undelete　ごみ箱からの復元後処理
