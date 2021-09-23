@@ -151,10 +151,19 @@ Database.executeBatch(new Batch(), 200);
 # スケジューラ
 ## スケジューラとは
 非同期処理の一つ。Salesforce上で設定した曜日に間隔的に実行されるApexクラス
+## スケジューラの使用例
+以下のクラスを作成するだけでSalesforce上で以下クラスのスケジュール設定を行うことができる
+```Apex
+global class SampleClass implements Schedulable {
+    global void execute(SchedulableContext ctx) {
+        // 処理
+    }
+}
+```
 # トリガ
 ## トリガとは
 # ガバナ制限
 ## ガバナ制限とは
 Salesforceでは一つのリソースを複数の会社が共有しているためメモリやCPU、DBなどを大きく占有する処理の制限のこと。
->> クイックリファレンス: [Apex ガバナ制限](https://developer.salesforce.com/docs/atlas.ja-jp.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_apexgov.htm)
+> クイックリファレンス: [Apex ガバナ制限](https://developer.salesforce.com/docs/atlas.ja-jp.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_apexgov.htm)
 	
