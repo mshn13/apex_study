@@ -164,8 +164,9 @@ global class SampleClass implements Schedulable {
 ```
 # トリガ
 ## トリガとは
+オブジェクトが登録や更新などのアクションを起こした際に呼ばれるもの。アクション前、後などタイミングを選択することができる。
 ## トリガの使用例
-以下のイベントを判定することができる
+以下の引数をトリガに渡すことによってイベントを取得することができる
 - before insert　登録前処理
 - before update　登録前処理
 - before delete　削除前処理
@@ -174,6 +175,10 @@ global class SampleClass implements Schedulable {
 - after delete 削除後処理
 - after undelete　ごみ箱からの復元後処理
 ```Apex
+    // Account登録更新前に呼ばれる
+    trigger HelloWorldTrigger on Account (before insert, before update) {
+	// 処理
+    }
 ```
 # ガバナ制限
 ## ガバナ制限とは
