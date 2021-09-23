@@ -204,7 +204,7 @@ public class SampleClass {
 	}
 }
 ```
-上記のSampleClassではcolomnA__cの値が'Active'の場合はcolomnB__cの値にfalse、それ以外の場合trueが入る処理になっている。
+上記のSampleClassでは適当に取得したAccountnoレコードのcolomnA__cの値が'Active'の場合はcolomnB__cの値にfalse、それ以外の場合trueが入る処理になっている。
 このクラスをテストするには以下のパターンが想定される
 
 
@@ -212,3 +212,44 @@ public class SampleClass {
 | ------------- | ------------- | ------------- | ------------- |
 | 条件  | colomnA__cの値  | Active  | Deleted  |
 | 結果  | colomnA__cの値  | false  | true  |
+	
+コーディングした場合以下になる
+```Apex
+@isTest
+public class SampleTestClass {
+	/**
+	 * 条件： colomnA__cの値がActive
+	 * 期待値：　colomnB__cの値がfalse
+	 */
+	@isTest
+	public void executeClmAIsActiveTest() {
+		// テスト用のデータを作成
+		Account newAccount = new Account(colomnA__c = 'Active');
+		insert newAccount;
+		// テスト実施
+		SampleClass newSampleClass = new SampleClass();
+		newSampleClass.execute();
+		// 確認
+		Account act = [SELECT colomnB__c FROM Account Limit 1];
+		// 第一引数と第二引数の値が一致していない場合テストでエラーが起こる
+		System.assertEquals(act.colomnB__c, false);
+	}
+	/**
+	 * 条件： colomnA__cの値がActive以外
+	 * 期待値：　colomnB__cの値がtrue
+	 */
+	@isTest
+	public void executeClmAIsDeletedTest() {
+		// テスト用のデータを作成
+		Account newAccount = new Account(colomnA__c = 'Deleted');
+		insert newAccount;
+		// テスト実施
+		SampleClass newSampleClass = new SampleClass();
+		newSampleClass.execute();
+		// 確認
+		Account act = [SELECT colomnB__c FROM Account Limit 1];
+		// 第一引数と第二引数の値が一致していない場合テストでエラーが起こる
+		System.assertEquals(act.colomnB__c, true);
+	}
+}
+```
