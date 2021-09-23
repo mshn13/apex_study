@@ -11,20 +11,20 @@
       - [Upsert・・・登録/更新](#Upsert)
       - [Delete・・・削除](#Delete)
 - [非同期処理](#非同期処理)
-　　　　- [非同期処理とは](#非同期処理とは)
+  - [非同期処理とは](#非同期処理とは)
   - [futureを使用する方法](#future)
   - [Database .batchableを使用する方法](#DatabaseBatchable)
 - [スケジューラ](#スケジューラ)
-　　　　- [スケジューラとは](#スケジューラとは)
+  - [スケジューラとは](#スケジューラとは)
 - [トリガ](#トリガ)
-　　　　- [トリガとは](#トリガとは)
+  - [トリガとは](#トリガとは)
 - [ガバナ制限](#ガバナ制限)
-　　　　- [ガバナ制限とは](#ガバナ制限とは)
+  - [ガバナ制限とは](#ガバナ制限とは)
+ 
 # TRAILHEAD
 > 1. [Apex の基本とデータベース](https://trailhead.salesforce.com/ja/content/learn/modules/apex_database)
 > 2. [非同期 Apex](https://trailhead.salesforce.com/ja/content/learn/modules/asynchronous_apex)
 > 3. [Apex トリガ](https://trailhead.salesforce.com/ja/content/learn/modules/apex_triggers)
-> 4. []()
 # SOQL/DML
 ## SOQL
 ### SOQLとは
