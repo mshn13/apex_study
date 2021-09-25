@@ -1,5 +1,5 @@
 # Apex入門
-:dolphin::dolphin::dolphin::dolphin:[サンプルクラス]():dolphin::dolphin::dolphin::dolphin:
+:dolphin::dolphin::dolphin::dolphin:[サンプルクラス](https://github.com/YujiroKusano/apex_study/tree/main/apex/sample):dolphin::dolphin::dolphin::dolphin:
 
 ## TRAILHEAD
 本記事は以下のTRAILHEADの内容をまとめたもののため以下を実施が前提となる
