@@ -52,8 +52,8 @@ public class CustomSampleController {
   </apex:pageBlockTable>
 </apex:page>
 ```
-apexタグ内でApexコントローラクラスの<b>参照可能な</b>フィールドを参照することができる。上記の例ではaccountsフィールドを参照している。
-
+apexタグ内でコントローラクラスの<b>参照可能な</b>フィールドを参照することができる。上記の例ではaccountsフィールドを参照している。
+またコントローラクラスで```setter```を用いることで値を渡すことも可能。
 ## コントローラ拡張
 > Apex 開発者ガイド: [Visualforce の概要](https://developer.salesforce.com/docs/atlas.ja-jp.pages.meta/pages/pages_intro.htm)
 
