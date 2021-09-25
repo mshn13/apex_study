@@ -91,7 +91,7 @@ actList.add(act);
  * @param キー この値が一致するレコードを更新。一致しないレコードは新規作成
  * @param エラー時のロールバック範囲。ture: すべて false: 単体
  */
-Database.upsert(actList, Account.Fields.name false);
+Database.upsert(actList, Account.Fields.name, false);
 ```
 ### delete
 レコード削除
