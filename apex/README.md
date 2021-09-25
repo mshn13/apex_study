@@ -1,5 +1,5 @@
 # Apex入門
-
+:dolphin::dolphin::dolphin::dolphin::dolphin::dolphin::dolphin::dolphin:
 ## TRAILHEAD
 本記事は以下のTRAILHEADの内容をまとめたもののため以下を実施が前提となる
 > 1. [Apex の基本とデータベース](https://trailhead.salesforce.com/ja/content/learn/modules/apex_database)
@@ -146,7 +146,7 @@ public void finish(Database.BatchableContext BC){}
  */
 Database.executeBatch(new Batch(), 200);
 ```
-バッチの全体的な動きとしては以下のような動きになる
+***ポイント***:dolphin:  バッチの全体的な動きとしては以下のような動きになる
 ```
 1.start -> 2.execute -> 3.execute -> 4.execute -> 5.finish
 
