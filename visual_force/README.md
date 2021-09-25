@@ -8,9 +8,18 @@
 - [コントローラ拡張](#コントローラ拡張)
 ## visualforceページとは
 HTMLライクな書き方で作成したSalesforceの画面のこと。Visw部分をVisualforceやCSSやJavascriptで設計し、Controller部分をApexで設計する。
-> 外部サイト[salesforce MVC モデル　ビュー　コントローラー とは　いまさら](https://salesforce.oikeru.com/entry/salesforce_mvc)
+> 外部サイト: [salesforce MVC モデル　ビュー　コントローラー とは　いまさら](https://salesforce.oikeru.com/entry/salesforce_mvc)
 ## 標準コントローラ
+### 標準コントローラとは
+### 具体的な使い方
+```Visualforce
+<apex:page standardController="Account">
+</apex:page>
+```
+上記のように```standardController```で対象のオブジェクトを選択することによって標準コントローラを作成することが可能。
+apexタグ内で```{!Account}```を使用してAccount内の項目を参照することが可能。その際idパラメータに```?id=XXXXXXXXXXXXX```を追加する。
 ## カスタムコントローラ
+
 ## コントローラ拡張
 > Apex 開発者ガイド: [Visualforce の概要](https://developer.salesforce.com/docs/atlas.ja-jp.pages.meta/pages/pages_intro.htm)
 
