@@ -1,9 +1,6 @@
 # Visual Force入門
 :dolphin::dolphin::dolphin::dolphin:[サンプルクラス]():dolphin::dolphin::dolphin::dolphin:
 
-重要そうな箇所を独断と偏見でまとめてみた
-
-
 ## TRAILHEAD
 本記事は以下のTRAILHEADの内容をまとめたもののため以下を実施が前提となる
 > 1. [Visualforce の基礎](https://trailhead.salesforce.com/ja/content/learn/modules/visualforce_fundamentals)
