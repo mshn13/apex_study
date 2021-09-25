@@ -4,7 +4,11 @@
 > 1. [Visualforce の基礎](https://trailhead.salesforce.com/ja/content/learn/modules/visualforce_fundamentals)
 ## 目次
 - [標準コントローラ](#標準コントローラ)
+  - [標準コントローラとは](#標準コントローラとは)  
+  - [具体的な使い方](#具体的な使い方)  
 - [カスタムコントローラ](#カスタムコントローラ)
+  - [カスタムコントローラ](#カスタムコントローラ)  
+  - [具体的な使い方](#具体的な使い方)  
 - [コントローラ拡張](#コントローラ拡張)
 ## visualforceページとは
 HTMLライクな書き方で作成したSalesforceの画面のこと。Visw部分をVisualforceやCSSやJavascriptで設計し、Controller部分をApexで設計する。
