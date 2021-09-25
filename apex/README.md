@@ -213,7 +213,7 @@ public class SampleClass {
 
 |  | 項目名 | パターン1 | パターン2 |
 | ------------- | ------------- | ------------- | ------------- |
-| 条件  | colomnA__cの値  | Active  | Deleted  |
+| 条件  | colomnA__cの値  | Active  | Deleted(Active以外)  |
 | 結果  | colomnA__cの値  | false  | true  |
 	
 コーディングした場合以下になる。
