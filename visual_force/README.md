@@ -17,7 +17,7 @@ HTMLライクな書き方で作成したSalesforceの画面のこと。Visw部�
 ### 標準コントローラとは
 apexを書かないシンプルなvisualforceページのコントローラ。自動でIDの```getter```が作成されるため、IDをURLパラメータに渡すことでレコードを指定することが可能。
 ### 標準コントローラの具体的な使い方
-```Visualforce
+```html
 <apex:page standardController="Account">
 </apex:page>
 ```
@@ -45,7 +45,7 @@ public class CustomSampleController {
 }
 ```
 下記のように```controller```で対象のApexコントローラを指定することによってカスタムコントローラを作成することが可能。
-```visualforce
+```html
 <apex:page controller="CustomSampleController">
   <apex:pageBlockTable value="{! accounts }" var="act">
       <apex:column value="{! act.id }"/>
