@@ -5,10 +5,10 @@
 ## 目次
 - [標準コントローラ](#標準コントローラ)
   - [標準コントローラとは](#標準コントローラとは)  
-  - [具体的な使い方](#具体的な使い方)  
+  - [標準コントローラの具体的な使い方](#標準コントローラの具体的な使い方)  
 - [カスタムコントローラ](#カスタムコントローラ)
   - [カスタムコントローラ](#カスタムコントローラ)  
-  - [具体的な使い方](#具体的な使い方)  
+  - [カスタムコントローラの具体的な使い方](#カスタムコントローラの具体的な使い方)  
 - [コントローラ拡張](#コントローラ拡張)
 ## visualforceページとは
 HTMLライクな書き方で作成したSalesforceの画面のこと。Visw部分をVisualforceやCSSやJavascriptで設計し、Controller部分をApexで設計する。
@@ -16,7 +16,7 @@ HTMLライクな書き方で作成したSalesforceの画面のこと。Visw部�
 ## 標準コントローラ
 ### 標準コントローラとは
 apexを書かないシンプルなvisualforceページのコントローラ。自動でIDのgetterが作成されるため、IDをURLパラメータに渡すことでレコードを指定することが可能。
-### 具体的な使い方
+### 標準コントローラの具体的な使い方
 ```Visualforce
 <apex:page standardController="Account">
 </apex:page>
@@ -25,7 +25,7 @@ apexを書かないシンプルなvisualforceページのコントローラ。�
 apexタグ内で```{!Account}```を使用してAccount内の項目を参照することが可能。その際idパラメータに```?id=XXXXXXXXXXXXX```を追加する。
 ## カスタムコントローラ
 ### カスタムコントローラとは
-### 具体的な使い方
+### カスタムコントローラの具体的な使い方
 ```visualforce
 <apex:page controller="ContactsListWithController">
     <apex:form>
