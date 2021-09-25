@@ -37,7 +37,7 @@ public class CustomSampleController {
   // accountのgetterを作成
   public List<Account> getAccounts() {
     List<Account> results = Database.query(
-        'SELECT Id' +
+        'SELECT Id　' +
         'FROM Account'
     );
     // View(visualforce)に値を送る
@@ -53,7 +53,7 @@ public class CustomSampleController {
   </apex:pageBlockTable>
 </apex:page>
 ```
-apexタグ内でコントローラクラスの<b>参照可能な</b>フィールドを参照することができる。上記の例ではaccountsフィールドを参照している。
+apexタグ内でコントローラクラスの<b>参照可能な</b>フィールド変数を参照することができる。上記の例ではaccountsフィールドを参照している。
 またコントローラクラスで```setter```を用いることで値を渡すことも可能。
 以下のフィールド変数はvisualforceからの参照は可能だが設定ができなくなる。
 ```Apex
