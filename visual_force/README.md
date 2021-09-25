@@ -28,11 +28,6 @@ apexタグ内で```{!Account}```を使用してAccount内の項目を参照す�
 ### カスタムコントローラの具体的な使い方
 ```visualforce
 <apex:page controller="ContactsListWithController">
-    <apex:form>
-        <apex:pageBlock title="Contacts List" id="contacts_list">
-            <!-- Contacts List goes here -->
-        </apex:pageBlock>
-    </apex:form>
 </apex:page>
 ```
 上記のように```controller```で対象のオブジェクトを選択することによってカスタムコントローラを作成することが可能。
