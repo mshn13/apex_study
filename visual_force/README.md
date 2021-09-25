@@ -21,8 +21,11 @@ apexを書かないシンプルなvisualforceページのコントローラ。�
 <apex:page standardController="Account">
 </apex:page>
 ```
-上記のように```standardController```で対象のオブジェクトを選択することによって標準コントローラを作成することが可能。
-apexタグ内で```{!Account}```を使用してAccount内の項目を参照することが可能。その際idパラメータに```?id=XXXXXXXXXXXXX```を追加する。
+上記のように```standardController```で対象のオブジェクトを指定することによって標準コントローラを作成することが可能。
+apexタグ内で```{!Account}```を使用してAccount内の項目を参照することが可能。その際idパラメータにレコードIDを渡すことができる。
+```url
+例）　https://visualforce.com/apex/customAccountPage?id=00XXX0000076gklXXX
+```
 ## カスタムコントローラ
 ### カスタムコントローラとは
 ### カスタムコントローラの具体的な使い方
@@ -30,7 +33,8 @@ apexタグ内で```{!Account}```を使用してAccount内の項目を参照す�
 <apex:page controller="ContactsListWithController">
 </apex:page>
 ```
-上記のように```controller```で対象のオブジェクトを選択することによってカスタムコントローラを作成することが可能。
+上記のように```controller```で対象のApexコントローラを指定することによってカスタムコントローラを作成することが可能。
+apexコントローラ内でgetterやセッターを作ることでデータの受け渡し可能になる
 
 ## コントローラ拡張
 > Apex 開発者ガイド: [Visualforce の概要](https://developer.salesforce.com/docs/atlas.ja-jp.pages.meta/pages/pages_intro.htm)
