@@ -15,7 +15,7 @@ HTMLライクな書き方で作成したSalesforceの画面のこと。Visw部�
 > 外部サイト: [salesforce MVC モデル　ビュー　コントローラー とは　いまさら](https://salesforce.oikeru.com/entry/salesforce_mvc)
 ## 標準コントローラ
 ### 標準コントローラとは
-apexを書かないシンプルなvisualforceページのコントローラ。自動でIDのgetterが作成されるため、IDをURLパラメータに渡すことでレコードを指定することが可能。
+apexを書かないシンプルなvisualforceページのコントローラ。自動でIDの```getter```が作成されるため、IDをURLパラメータに渡すことでレコードを指定することが可能。
 ### 標準コントローラの具体的な使い方
 ```Visualforce
 <apex:page standardController="Account">
@@ -29,12 +29,30 @@ apexタグ内で```{!Account}```を使用してAccount内の項目を参照す�
 ## カスタムコントローラ
 ### カスタムコントローラとは
 ### カスタムコントローラの具体的な使い方
+標準コントローラとは違いApexでコントローラを先に作成する必要がある。
+apexコントローラ内で```getter```や```setter```を作ることでデータの受け渡し可能になる
+```apex
+public class CustomSampleController {
+  // accountのgetterを作成
+  public List<Account> getAccounts() {
+    List<Account> results = Database.query(
+        'SELECT Id' +
+        'FROM Account'
+    );
+    // View(visualforce)に値を送る
+    return results;
+  }
+}
+```
+下記のように```controller```で対象のApexコントローラを指定することによってカスタムコントローラを作成することが可能。
 ```visualforce
-<apex:page controller="ContactsListWithController">
+<apex:page controller="CustomSampleController">
+  <apex:pageBlockTable value="{! accounts }" var="act">
+      <apex:column value="{! act.id }"/>
+  </apex:pageBlockTable>
 </apex:page>
 ```
-上記のように```controller```で対象のApexコントローラを指定することによってカスタムコントローラを作成することが可能。
-apexコントローラ内でgetterやセッターを作ることでデータの受け渡し可能になる
+apexタグ内でApexコントローラクラスの<b>参照可能な</b>フィールドを参照することができる。上記の例ではaccountsフィールドを参照している。
 
 ## コントローラ拡張
 > Apex 開発者ガイド: [Visualforce の概要](https://developer.salesforce.com/docs/atlas.ja-jp.pages.meta/pages/pages_intro.htm)
