@@ -46,7 +46,7 @@ List<SObject> objList = [SELECT colomn FROM SObject];
 // 単体
 SObject obj = [SELECT colomn FROM SObject];
 ```
-またWHERE句をしようして条件を指定することができる
+またWHERE句などSQLと同じように条件を指定することができる
 ```Apex
 /* nameの値が取引先Aになっている取引先オブジェクトを取得 */
 // リスト
