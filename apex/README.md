@@ -107,11 +107,12 @@ Database.delete(actList, false);
 ```
 ※ よく調べるやつ
 - [参照項目の値の更新方法](https://developer.salesforce.com/docs/atlas.ja-jp.232.0.apexcode.meta/apexcode/langCon_apex_dml_nested_object.htm)
-- 外部サイト：　[エラーの取得方法](https://gawatari.com/apexlumpdml/)
+- 外部サイト: [エラーの取得方法](https://gawatari.com/apexlumpdml/)
 
 :warning: **構文的にSQLと同じ箇所が多いが大きく違う箇所が以下の２点になる**
 1. 取得する項目はSELECTするときに必ず記載しなければならない。上記のようにnameだけ記載した場合は作成日などは取得できない。ただしIDだけはデフォルトで取得できる。「＊」は使用できない
-2. ガバナ制限に注意しなければならない。具体的には一回の重い処理する場合などに制限がある。
+> 外部サイト: [Salesforce Spring '21の新機能、SOQLのFIELDS()関数について](https://base.terrasky.co.jp/articles/qAkDk)
+3. ガバナ制限に注意しなければならない。具体的には一回の重い処理する場合などに制限がある。
 
 # 非同期処理
 ## 非同期処理とは
