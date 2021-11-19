@@ -62,5 +62,8 @@ apexタグ内でコントローラクラスの<b>参照可能な</b>フィール
       public Account account { get; private set; }
 ```
 ## コントローラ拡張
+標準コントローラまたはカスタムコントローラの機能を拡張する Apex クラスです。
+アクションの追加や上書をする際に使用する
+※標準コントローラを拡張する場合、標準コントローラのロジックは、システムモードで実行されません
+※VisualForce内で使用していない項目はApex内で使用することはできない
 > Apex 開発者ガイド: [Visualforce の概要](https://developer.salesforce.com/docs/atlas.ja-jp.pages.meta/pages/pages_intro.htm)
-
