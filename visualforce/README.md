@@ -28,7 +28,7 @@ apexタグ内で```{!Account}```を使用してAccount内の項目を参照す�
 ```url
 例）　https://visualforce.com/apex/customAccountPage?id=00XXX0000076gklXXX
 ```
-VisualForce内で使用していない項目はApex内で使用することはできないため
+***VisualForce内で使用していない項目はApex内で使用することはできない***ため
 処理でのみ使いたい項目がある場合は以下のように表示されないHTMLタグを記載することで対応可能
 ```HTML
     <apex:outputfield value="{!Account.Phone}" rendered="false" />
