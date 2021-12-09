@@ -98,3 +98,13 @@ public class myControllerExtension {
 ```
 > Apex 開発者ガイド: [Visualforce の概要](https://developer.salesforce.com/docs/atlas.ja-jp.pages.meta/pages/pages_intro.htm)
 
+各コントローラの相違点
+| 相違点	 | 標準 | 標準リスト | 拡張 | カスタム |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| Apexクラスの作成 | 不要	  | 不要  | 必須  | 必須  |
+| テストクラス | 不要  | 不要  | 必須 | 必須 |
+| 新しいアクションの追加	| できない | できない	| できる | できる |
+| アクションの上書き | できない	  | できない | できる | できる |
+| デフォルトの実行モード	| ユーザ  | ユーザ | システム	| システム |
+> 外部サイト：[【Apex】コントローラ拡張の使い方](https://savepo.com/how_to_use_controller_extension)
+
