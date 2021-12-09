@@ -60,7 +60,7 @@ public class CustomSampleController {
   </apex:pageBlockTable>
 </apex:page>
 ```
-apexタグ内でコントローラクラスの<b>参照可能な</b>フィールド変数を参照することができる。上記の例ではaccountsフィールドを参照している。
+Apexタグ内でコントローラクラスの<b>参照可能な</b>フィールド変数を参照することができる。上記の例ではaccountsフィールドを参照している。
 またコントローラクラスで```setter```を用いることで値を渡すことも可能。
 以下のフィールド変数はvisualforceからの参照は可能だが設定ができなくなる。
 ```Apex
