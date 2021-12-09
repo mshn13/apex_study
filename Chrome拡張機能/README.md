@@ -7,7 +7,7 @@
 ### [Salesforce DevTools](https://chrome.google.com/webstore/detail/salesforce-devtools/ehgmhinnhggigkogkbhnbodhbfjgncjf?hl=ja)
 - 項目の仕様書作成時やデータ確認の際に便利なツール
 #### 具体的な機能
-- ログイン中のアカウントの項目一覧やデータなど様々な情報をエクセルなどに出力してくれる
+- ログイン中のアカウントの項目一覧やデータなどの情報をエクセルに出力してくれる
 ![image](https://user-images.githubusercontent.com/42022387/145342107-0389d467-24bd-4245-9347-90796dd6dfff.png)
 ![image](https://user-images.githubusercontent.com/42022387/145342966-590b9775-65da-4307-910c-9b6b34387c5a.png)
 
