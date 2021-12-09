@@ -96,8 +96,7 @@ public class myControllerExtension {
     </apex:form>
 </apex:page>
 ```
-> Apex 開発者ガイド: [Visualforce の概要](https://developer.salesforce.com/docs/atlas.ja-jp.pages.meta/pages/pages_intro.htm)
-
+> Apex 開発者ガイド: [コントローラ拡張の作成](https://developer.salesforce.com/docs/atlas.ja-jp.pages.meta/pages/pages_controller_extension.htm)
 各コントローラの相違点
 | 相違点	 | 標準 | 標準リスト | 拡張 | カスタム |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -108,3 +107,5 @@ public class myControllerExtension {
 | デフォルトの実行モード	| ユーザ  | ユーザ | システム	| システム |
 > 外部サイト：[【Apex】コントローラ拡張の使い方](https://savepo.com/how_to_use_controller_extension)
 
+
+> Apex 開発者ガイド: [Visualforce の概要](https://developer.salesforce.com/docs/atlas.ja-jp.pages.meta/pages/pages_intro.htm)
