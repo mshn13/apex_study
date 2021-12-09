@@ -28,6 +28,11 @@ apexタグ内で```{!Account}```を使用してAccount内の項目を参照す�
 ```url
 例）　https://visualforce.com/apex/customAccountPage?id=00XXX0000076gklXXX
 ```
+VisualForce内で使用していない項目はApex内で使用することはできないため
+処理でのみ使いたい項目がある場合は以下のように表示されないHTMLタグを記載することで対応可能
+```HTML
+    <apex:outputfield value="{!Account.Phone}" rendered="false" />
+```
 ## カスタムコントローラ
 ### カスタムコントローラとは
 ### カスタムコントローラの具体的な使い方
@@ -65,5 +70,5 @@ apexタグ内でコントローラクラスの<b>参照可能な</b>フィール
 標準コントローラまたはカスタムコントローラの機能を拡張する Apex クラスです。
 アクションの追加や上書をする際に使用する
 ※標準コントローラを拡張する場合、標準コントローラのロジックは、システムモードで実行されません
-※VisualForce内で使用していない項目はApex内で使用することはできない
 > Apex 開発者ガイド: [Visualforce の概要](https://developer.salesforce.com/docs/atlas.ja-jp.pages.meta/pages/pages_intro.htm)
+
