@@ -17,7 +17,7 @@ HTMLライクな書き方で作成したSalesforceの画面のこと。Visw部�
 > 外部サイト: [salesforce MVC モデル　ビュー　コントローラー とは　いまさら](https://salesforce.oikeru.com/entry/salesforce_mvc)
 ## 標準コントローラ
 ### 標準コントローラとは
-apexを書かないシンプルなvisualforceページのコントローラ。自動でIDの```getter```が作成される。IDをURLパラメータに渡すことでレコードを指定することが可能。
+Apexコードを書かないvisualforceページのコントローラ。自動でIDの```getter```が作成される。URLのパラメータにIDを渡すことでレコードを指定することが可能。
 ### 標準コントローラの具体的な使い方
 ```html
 <apex:page standardController="Account">
