@@ -70,5 +70,18 @@ apexタグ内でコントローラクラスの<b>参照可能な</b>フィール
 標準コントローラまたはカスタムコントローラの機能を拡張する Apex クラスです。
 アクションの追加や上書をする際に使用する
 ※標準コントローラを拡張する場合、標準コントローラのロジックは、システムモードで実行されません
+
+### コントローラ拡張の具体的な使い方
+標準コントローラを拡張することでコントローラ拡張を行うことができる。
+下記のように```extensions```で対象のApexコントローラを指定することによってコントローラ拡張を使用することが可能。
+```html
+<apex:page standardController="Account" extensions="myControllerExtension">
+    {!greeting} <p/>
+    <apex:form>
+        <apex:inputField value="{!account.name}"/> <p/>
+        <apex:commandButton value="Save" action="{!save}"/>
+    </apex:form>
+</apex:page>
+```
 > Apex 開発者ガイド: [Visualforce の概要](https://developer.salesforce.com/docs/atlas.ja-jp.pages.meta/pages/pages_intro.htm)
 
