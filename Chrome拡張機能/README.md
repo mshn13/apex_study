@@ -1,6 +1,6 @@
 # GoogleChrome拡張機能一覧
 ## 目次
-- [Salesforce DevTools](# Salesforce DevTools)
+- [Salesforce DevTools](#Salesforce DevTools)
 - [ORGanizer for Salesforce](#ORGanizer for Salesforce)
 - [Force.com LOGINS](#Force.com LOGINS)
 ## Salesforce DevTools
