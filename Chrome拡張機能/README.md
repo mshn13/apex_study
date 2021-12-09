@@ -19,4 +19,4 @@
 - 環境に瞬時にログインできるツール
 ### 具体的な機能
 - ログイン情報を複数登録しておくことができワンクリックでログインできるようにしてくれる
-![image](https://user-images.githubusercontent.com/42022387/145342018-c221bd24-f877-499f-9eb4-d09ccb3c2ad5.png)
+![image](https://user-images.githubusercontent.com/42022387/145343181-78e09101-81f4-4a57-910e-75585f6e8260.png)
