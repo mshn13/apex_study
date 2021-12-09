@@ -97,7 +97,9 @@ public class myControllerExtension {
 </apex:page>
 ```
 > Apex 開発者ガイド: [コントローラ拡張の作成](https://developer.salesforce.com/docs/atlas.ja-jp.pages.meta/pages/pages_controller_extension.htm)
+
 各コントローラの相違点
+
 | 相違点	 | 標準 | 標準リスト | 拡張 | カスタム |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Apexクラスの作成 | 不要	  | 不要  | 必須  | 必須  |
