@@ -74,6 +74,19 @@ apexタグ内でコントローラクラスの<b>参照可能な</b>フィール
 ### コントローラ拡張の具体的な使い方
 標準コントローラを拡張することでコントローラ拡張を行うことができる。
 下記のように```extensions```で対象のApexコントローラを指定することによってコントローラ拡張を使用することが可能。
+```Apex
+public class myControllerExtension {
+    private final Account acct;
+    // controller.
+    public myControllerExtension(ApexPages.StandardController stdController) {
+        this.acct = (Account)stdController.getRecord();
+    }
+    public String getGreeting() {
+        return 'Hello ' + acct.name + ' (' + acct.id + ')';
+    }
+}
+```
+
 ```html
 <apex:page standardController="Account" extensions="myControllerExtension">
     {!greeting} <p/>
