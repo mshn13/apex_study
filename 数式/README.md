@@ -35,7 +35,7 @@ Regix関数・・・正規表現の値と一致する場合はTRUEが変える
 
 ### 組み合わせ
 
-例) 0~5またはA~Eまたはa~cのいずれかの値
+例) 0から5または"AからEまたはaからcのいずれかの値
 ```“[0-5A-Ea-c]"```
 
 > https://help.salesforce.com/s/articleView?id=000334073&type=1
