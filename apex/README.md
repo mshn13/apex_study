@@ -156,7 +156,7 @@ Database.executeBatch(new Batch(), 200);
 - 1つ目のstartで検索結果がバッチサイズごとにexecuteが実行される
 - executeで処理できるものがなくなり次第finishが呼ばれバッチが終了する
 ```
-![image](https://user-images.githubusercontent.com/42022387/165685617-bb425186-f451-41e2-8e6e-2a35289b90b1.png)
+![image](https://user-images.githubusercontent.com/42022387/165685930-53d5f6c4-b153-4c49-8b0c-dc6c42e9a437.png)
 
 > Apex 開発者ガイド: [Apex の一括処理の使用
 ](https://developer.salesforce.com/docs/atlas.ja-jp.230.0.apexcode.meta/apexcode/apex_batch_interface.htm)
