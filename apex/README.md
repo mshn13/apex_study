@@ -151,7 +151,7 @@ Database.executeBatch(new Batch(), 200);
 ```
 ***ポイント***:dolphin:  バッチの全体的な動きとしては以下のような動きになる
 ```
-1.start -> 2.execute -> 3.execute -> 4.execute -> 5.finish
+1.start -> 2.execute x (取得データサイズ/バッチサイズ) -> 5.finish
 
 - 1つ目のstartで検索結果がバッチサイズごとにexecuteが実行される
 - executeで処理できるものがなくなり次第finishが呼ばれバッチが終了する
