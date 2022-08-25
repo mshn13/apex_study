@@ -69,7 +69,7 @@ actList.add(act);
  */
 Database.insert(actList, false);
 ```
-### updatee
+### update
 レコード更新 
 ```Apex
 List<Account> actList = [SELECT id, name FROM account WHERE name = `取引先A`];
