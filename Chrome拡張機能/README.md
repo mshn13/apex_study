@@ -20,7 +20,7 @@
 - Salesforceのログイン状況に応じてSalesforce画面上部に設定したラベルを付けてくれる
 ![image](https://user-images.githubusercontent.com/42022387/145342458-90d024d3-3d8f-422a-bcde-a76a8ab516f6.png)
 - Salesforceのログイン情報を保管することができる
-<img width="669" alt="スクリーンショット 2022-08-25 17 17 35" src="https://user-images.githubusercontent.com/42022387/186614959-73c3f7da-d3de-4761-bdb6-a34419627ac3.png">
+![image]（https://user-images.githubusercontent.com/42022387/186614959-73c3f7da-d3de-4761-bdb6-a34419627ac3.png)
 
 
 
