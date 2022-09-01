@@ -15,6 +15,7 @@ System.debug('Hello Apex Class');
 <img width="615" alt="スクリーンショット 2022-09-01 17 51 33" src="https://user-images.githubusercontent.com/42022387/187873915-fd9df0ac-6ffc-4218-b054-abf36941b5ba.png">
 
 5. ログが開かれるため、画面中央の[Debug Only]にチェックを入れると```Hello Apex Class```が表示される　
-<img width="389" alt="スクリーンショット 2022-09-01 17 42 05" src="https://user-images.githubusercontent.com/42022387/187874711-5e8b3933-dab1-465c-ad69-3b7c24f2783b.png">
+<img width="561" alt="スクリーンショット 2022-09-01 17 56 10" src="https://user-images.githubusercontent.com/42022387/187875532-ed2217f1-d429-44fa-8c26-482e5cd8818e.png">
 
 # 🎉🎉🎉Congratulations!🎉🎉🎉
+
