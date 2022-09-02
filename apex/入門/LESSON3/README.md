@@ -1,5 +1,5 @@
 # LESSON3
-## 変数の型を覚えよう
+## 変数の型(データ型)を覚えよう
 
 Integer、Double、Long、Date、Datetime、String、ID、または Booleanなどのよく使用する型（データ型）
 | 型 | リテラル | 使用例 |
@@ -14,7 +14,34 @@ Integer、Double、Long、Date、Datetime、String、ID、または Booleanな�
 | Double | 小数点を含む数値型 | ```Double d=3.14159;``` |
 | Blob | バイナリデータ型 | ```Blob exampleIv = Blob.valueOf('Example of IV123');``` |
 
-
+## 型(データ型)で色々試してみよう
+1. 実行匿名ウィンドウ上に以下を入力し、実行
+    1. Integer型よりLong型の方が大きいため、Long型にInteger型を代入することは可能
+    ```apex
+    Integer test1 = 10;
+    Long test2 = test1;
+    System.debug(tset2);
+    // 結果 ↓↓↓↓
+    // 10
+    ```
+    2. Integer型よりLong型の方が大きいため、Integer型にLong型を代入使用とするとエラーになる
+    ```apex
+    Long test1 = 10;
+    Integer test2 = test1;
+    System.debug(tset2);
+    // 結果 ↓↓↓↓
+    // Line: 2, Column: 9
+    // Illegal assignment from Long to Integer
+    ```
+    3. キャストすることによってサイズが小さいデータ型に代入することができる
+    ```apex
+    Long test1 = 10;
+    Integer test2 = (Integer)test1;
+    System.debug(test2);
+    // 結果 ↓↓↓↓
+    // 10
+    ```
+2. 
 
 
 
