@@ -2,17 +2,19 @@
 ## 変数の型(データ型)を覚えよう
 
 Integer、Double、Long、Date、Datetime、String、ID、または Booleanなどのよく使用する型（データ型）
-| 型 | リテラル | 使用例 |
-| --- | --- | --- |
-| Integer | 整数型 | ```Integer count = 1;``` |
-| String | 文字列型 | ```String moji = ‘aiueo’;``` |
-| Boolean | 真偽型 | ```Boolean flag = true;``` |
-| Date | 日付型 | ```Date today = Date.newInstance(‘2022’, ‘12’, ‘25’);``` |
-| Datetime | 日付時刻型 | ```Datetime now = Datetime.now();``` |
-| ID | ID型 | ```ID actId = ‘123456789012345678’;``` |
-| Decimal | 小数点を含む数値型 | ```Decimal decimalNum = -3.05443;``` |
-| Double | 小数点を含む数値型 | ```Double d=3.14159;``` |
-| Blob | バイナリデータ型 | ```Blob exampleIv = Blob.valueOf('Example of IV123');``` |
+| 型 | リテラル | 使用例 |　サイズ | 
+| --- | --- | --- | --- |
+| ID | ID型 | ```ID actId = ‘123456789012345678’;``` | 18文字(15文字を入れた場合自動で18に変換されます) |
+| Integer | 整数型 | ```Integer count = 1;``` | 32bit | 
+| Long | データ量の多い整数型 | ```Long lg = 30000000L;``` | 64bit |
+| Double | 小数点を含む数値型 | ```Double d=3.14159;``` | 64bit |
+| Decimal | 小数点を含む数値型 | ```Decimal decimalNum = -3.05443;``` | 任意 |
+| String | 文字列型 | ```String moji = ‘aiueo’;``` | 任意 |
+| Boolean | 真偽型 | ```Boolean flag = true;``` | true、false、null |
+| Date | 日付型 | ```Date today = Date.newInstance(‘2022’, ‘12’, ‘25’);``` | 任意 |
+| Datetime | 日付時刻型 | ```Datetime now = Datetime.now();``` | 任意 |
+| Blob | バイナリデータ型 | ```Blob exampleIv = Blob.valueOf('Example of IV123');``` | 任意 |
+
 
 ## 型(データ型)で色々試してみよう
 1. 実行匿名ウィンドウ上に以下を入力し、実行
@@ -41,7 +43,9 @@ Integer、Double、Long、Date、Datetime、String、ID、または Booleanな�
     // 結果 ↓↓↓↓
     // 10
     ```
-2. 
+    > キャストとは・・・　変数の前に```(変更したいデータ型)```を記載することによってデータ型を変更してくれる
+
+# 🎉🎉🎉Congratulations!🎉🎉🎉
 
 
 
