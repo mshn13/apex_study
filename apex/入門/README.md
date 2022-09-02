@@ -6,7 +6,7 @@
 <img width="222" alt="image" src="https://user-images.githubusercontent.com/42022387/187871297-53e96a50-c2f4-4e3e-9f13-c2bfcaf7b3cc.png">
 
 2. 開発者コンソールのツールバーから[Debug]⇨[Open Execute Anonymous Window (実行匿名ウィンドウを開く)]を押下
-<img width="222" alt="image" src="https://user-images.githubusercontent.com/42022387/187871660-9e7eb69d-0a4f-4630-a6b7-b4831e47a9e9.png">
+<img width="397" alt="スクリーンショット 2022-09-02 10 37 36" src="https://user-images.githubusercontent.com/42022387/188040578-fd9726ad-c78e-4884-8585-11d91aba4de9.png">
 
 ### 実行方法
 1. 実行匿名ウィンドウ下部に表示されている[Open Log]にチェックを入れ、[execute]ボタンを押下
