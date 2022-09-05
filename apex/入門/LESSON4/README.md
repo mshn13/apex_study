@@ -18,13 +18,40 @@
     | ```&&``` | 左側の値が```true```で<strong>かつ</strong>右側の値が```true```の場合```true```を返し、それ以外は```false```を返す | ```true && true``` |
     | ```\|\|``` | 左側の値が```true```<strong>または</strong>右側の値が```true```の場合```true```を返し、どちらも```false```の場合```false```を返す | ```true \|\| false``` |
 
-## IF文を使用してみよう！
+## 比較(論理)演算子で色々試してみよう！
 1. 実行匿名ウィンドウ上に以下を入力し、実行
-    1. Integer型よりLong型の方が大きいため、Long型にInteger型を代入することは可能
+    1. ```true```が表示されるか```false```が表示されるか考えてみよう
     ```apex
-    Integer test1 = 10;
-    Long test2 = test1;
-    System.debug(tset2);
-    // 結果 ↓↓↓↓
-    // 10
+    Boolean result = true;
+    System.debug('Q01. ↓↓↓↓');
+    result = true == true;
+    System.debug(result);
+    
+    System.debug('Q02. ↓↓↓↓');
+    result = true && true || false;
+    System.debug(result);
+    
+    System.debug('Q03. ↓↓↓↓');
+    result = 'Apex' == 'Apex' && true || false;
+    System.debug(result);
+    
+    System.debug('Q04. ↓↓↓↓');
+    result = 10 < 5;
+    System.debug(result);
+    
+    System.debug('Q05. ↓↓↓↓');
+    result = 24 > 12 || 21 < 20;
+    System.debug(result);
+    
+    System.debug('Q06. ↓↓↓↓');
+    result = 212 < 121 && 212 < 222 || 111 <= 111;
+    System.debug(result);
+    
+    System.debug('Q07. ↓↓↓↓');
+    result = 0 < 14 && ( 1 < 2 || 2 < 1 );
+    System.debug(result);
+    
+    System.debug('Q08. ↓↓↓↓');
+    result = (0 < 14 && 1 < 2) || 2 < 1 ;
+    System.debug(result);
     ```
