@@ -23,6 +23,7 @@
     1. ```true```が表示されるか```false```が表示されるか考えてみよう
     ```apex
     Boolean result = true;
+    
     System.debug('Q01. ↓↓↓↓');
     result = true == true;
     System.debug(result);
