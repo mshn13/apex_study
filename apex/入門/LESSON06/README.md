@@ -54,6 +54,17 @@ public class Cat {
     }
     ```
 
-## 
+## Let's Try!
+-  "Dog"クラスに、"bark"メソッドを作成しよう。
+    ```apex
+    public class Dog {
+        public String name;
+    
+        public void bark() {
+            System.debug('僕の名前は' + this.name + 'だワン!');
+        }
+    }
+    ```
+
 
 # 🎉🎉🎉Congratulations!🎉🎉🎉
