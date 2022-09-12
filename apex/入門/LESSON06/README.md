@@ -22,20 +22,20 @@ public class Cat {
 - フィールド ・・・ そのクラスの持つ情報(ステータス, プロパティ)
     - メンバ変数/フィールド ・・・ 変動が起こり得る値。インスタンスが持つ値として使用する。```this.```を使用する。
     ```apex
-    Integer age = 20;
+    public Integer age = 20;
     ```
 
     - 定数フィールド ・・・ 変動しない値。固定値。
     ```apex
     // finalを使用することで定数フィールドになる
     // 全て大文字で記述する。
-    final Integer ADULT_AGE = 18;
+    public final Integer ADULT_AGE = 18;
     ```
 
     - 静的変数/クラス変数/インスタンス変数 ・・・ 変動が起こり得る値。クラスが持つ情報として使用する。
     ```apex
     // staticを使用することで定数フィールドになる。
-    static Boolean isFly = false;
+    public static Boolean isFly = false;
     ```
 - メソッド ・・・ そのクラスが持つ機能(関数, ファンクション)
     ```text
