@@ -26,6 +26,19 @@
     System.debug(result);
     
     System.debug('Q02. ↓↓↓↓');
-    result = true && true || false;
+    result = 12 + '12';
     System.debug(result);
+    
+    System.debug('Q03. ↓↓↓↓');
+    result = 12 + 12 + '12';
+    System.debug(result);
+    
+    System.debug('Q04. ↓↓↓↓');
+    result = 12 + (12 + '12');
+    System.debug(result);
+    
+    System.debug('Q05. ↓↓↓↓');
+    result = 12 + 12 * 2;
+    System.debug(result);
+    
     ```
