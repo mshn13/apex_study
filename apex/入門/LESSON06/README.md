@@ -59,66 +59,48 @@ public class Cat {
 -  Dogクラスに、barkメソッドを作成しよう
     ```apex
     public class Dog {
-        //フィールドの宣言
-        public String name;
-        
-        //コンストラクタの定義
-        public Dog(String name){
-            //this.name(上記で宣言したフィールド）にname(引数)の値を代入
-            this.name = name;
-        }
     
         //barkメソッド
-        public void bark() {
-            System.debug('僕の名前は' + this.name + 'だワン!');
+        public void bark(String name) {
+            System.debug('僕の名前は' + name + 'だワン!');
         }
     }
     ```
 -  実行匿名ウィンドウ上で、barkメソッドを呼び出してみよう
     ```apex
     //Dogインスタンスを生成する
-    Dog d = new Dog('任意のName値');
+    Dog d = new Dog();
     
-    //Dogインスタンスのbarkメソッドを呼び出す
-    d.bark();
+    //Dogインスタンスのbarkメソッドに引数を指定して呼び出す
+    d.bark('任意のname値');
     ```
 -  上記を実行し、以下のようなログが表示されていることを確認しよう
     
     <img width="496" alt="image" src="https://user-images.githubusercontent.com/112843362/189784311-c09ff680-bfc7-438f-8579-b2887beb666d.png">
 ### Level 2
--  Dogクラスにフィールドとメソッドを追加しよう 
+-  Dogクラスにeatメソッドを追加しよう 
     ```apex
     public class Dog {
         //フィールドの宣言
-        public String name;
-        public Integer feedMinimumAmount;
-        public integer feedMaximumAmount;
-        
-        //コンストラクタの定義
-        public Dog(String name, Integer feedMinimumAmount, Integer feedMaximumAmount) {
-            this.name = name;
-            this.minimumAmount = feedMinimumAmount;
-            this.maximumAmount = feedMaximumAmount;
-        }
     
         //barkメソッド
-        public void bark() {
-            System.debug('僕の名前は' + this.name + 'だワン!');
+        public void bark(String name) {
+            System.debug('僕の名前は' + name + 'だワン!');
         }
         
         //eatメソッド
-        public Integer eat(String feedName, Integer feedAmount) {
+        public Integer eat(String feedName, Integer feedMinimumAmount, Integer feedMaximumAmount, Integer feedAmount) {
             System.debug(feedName + 'おいしいワン');
             
             //feedMinimumAmount（エサの最小限量）、feedMaximumAmount（エサの最大限量）とfeedAmount（与えられた餌の量）を比較し処理を分ける
-            if (feedAmount <= this.feedMinimumAmount) {
+            if (feedAmount <= feedMinimumAmount) {
                 System.debug('量が足りないワン...');
-            } else if(feedAmount <= this.feedMaximumAmount) {
+            } else if(feedAmount <= feedMaximumAmount) {
                 System.debug('ちょうどいいワン');
             } else {
                 System.debug('食べきれなかったワン...');
                 //食べきれなかった量を戻り値として返す
-                return feedAmount - this.feedMaximumAmount;
+                return feedAmount - feedMaximumAmount;
             }
             
             return 0;
@@ -129,10 +111,10 @@ public class Cat {
 -  実行匿名ウィンドウ上で、eatメソッドを呼び出してみよう
     ```apex
     //Dogインスタンスを生成する
-    Dog d = new Dog('任意のName値', 任意のminimumAmount値, 任意のmaximumAmount値 );    
+    Dog d = new Dog();    
     
     //Dogインスタンスのeatメソッドに引数を指定して呼び出す
-    d.eat('任意のfeedName値', 任意のfeedAmount値);
+    d.eat('任意のfeedName値', 任意のfeedMinimumAmount値, 任意のfeedMaximumAmount値, 任意のfeedAmount値);
     ```
 -  上記を実行し、以下のようなログが表示されていることを確認しよう
 
